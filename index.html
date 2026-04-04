@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pet Manager</title>
+
+  <link rel="stylesheet" href="style.css" />
+ </head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Pet Manager</h1>
+      <p>Add pets, calculate boarding cost, and display them on the page.</p>
+
+      <div class="grid">
+        <div>
+          <label for="petType">Pet Type</label>
+          <select id="petType">
+            <option value="Dog">Dog</option>
+            <option value="Cat">Cat</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="OwnerName">Owner Name</label>
+          <input type="text" id="OwnerName" placeholder="Jane Smith" />
+        </div>
+
+        <div>
+          <label for="petName">Pet Name</label>
+          <input type="text" id="petName" placeholder="Buddy" />
+        </div>
+
+        <div>
+          <label for="petAge">Pet Age</label>
+          <input type="number" id="petAge" placeholder="3" min="0" />
+        </div>
+
+        <div>
+          <label for="daysStay">Days Staying</label>
+          <input type="number" id="daysStay" placeholder="5" min="1" />
+        </div>
+      </div>
+
+      <div class="button-row">
+        <button class="btn-primary" id="addPetBtn">Add Pet</button>
+        <button class="btn-secondary" id="clearBtn">Clear All</button>
+      </div>
+
+      <div class="total" id="totalPets">Total Pets: 0</div>
+    </div>
+
+    <div class="card">
+      <h2>Boarding List</h2>
+      <div id="petList" class="pet-list">
+        <p class="empty">No pets added yet.</p>
+      </div>
+    </div>
+  </div>
+  <script src="utils.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
