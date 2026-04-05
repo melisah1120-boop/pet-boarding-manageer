@@ -1,5 +1,5 @@
 ## 🌐Live Demo
-    [View the App] (https://pet-manager-1120.netlify.app)
+    [View the App](https://pet-manager-1120.netlify.app)
 
 # 🐾 Pet Boarding Management App
 
